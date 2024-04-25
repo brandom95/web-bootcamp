@@ -1,0 +1,30 @@
+ol {
+  margin-left: -40px;
+  margin-top: -20px;
+  list-style-position: inside;
+}
+
+/* TO-DO 1*/
+p {
+  color: red;
+}
+
+/* TO-DO 2*/
+.note {
+  font-size: 20px;
+}
+
+/* TO-DO 3*/
+#id-selector-demo {
+  color: green;
+}
+
+/* TO-DO 4*/
+li[ value="4"] {
+  color: blue;
+}
+
+/* TO-DO 5*/
+* {
+  text-align: center;
+}
