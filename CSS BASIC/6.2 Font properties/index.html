@@ -4,12 +4,33 @@
 <head>
   <meta charset="UTF-8">
   <title>CSS Properties</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&display=swap" rel="stylesheet">
   <style>
     body {
       background-color: cornflowerblue;
       color: white;
       font-size: 18px;
     }
+    p[class="color"]{
+      color:coral;
+    }
+    p[class="fontsize"]{
+      font-size: 2rem;
+    }
+    p[class="fontweight"]{
+      font-weight: 900;
+    }
+    p[class="fontfamily"]{
+      font-family: "Caveat";
+    }
+    p[class="textalign"]{
+      text-align: right;
+    }
+
+
+
 
     /* Don't change the CSS above, add Your CSS below */
 
@@ -19,11 +40,11 @@
 
 <body>
   <h1>Important CSS Properties</h1>
-  <p>Color</p>
-  <p>Font Size</p>
-  <p>Font Weight</p>
-  <p>Font Family</p>
-  <p>Text Align</p>
+  <p class="color">Color</p>
+  <p class="fontsize">Font Size</p>
+  <p class="fontweight">Font Weight</p>
+  <p class="fontfamily">Font Family</p>
+  <p class="textalign">Text Align</p>
 
   <!-- TODOs
   1. Change the color of <p>Color</p> to "coral" color.
