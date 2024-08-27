@@ -25,4 +25,38 @@
 .profile-img {
   height: 100px;
   border-radius: 50%;
+  
+}
+
+#feature{
+  margin-top: 5px;
+}
+
+#testimonial{
+  text-align: center;
+  justify-content: center;
+  background-color: #F8F9FA;
+  padding-bottom: 50px;
+  padding-top: 80px;
+}
+
+.testimonial-dog p{
+  font-family: Arial, Helvetica, sans-serif;
+  padding-bottom: 50px;
+
+}
+.testimonial-dog img{
+  height: 100px;
+  margin-top: 45px;
+  margin-bottom: 0;
+  border-radius: 50%;
+}
+
+#pricing{
+  padding-top: 60px;
+}
+#footer{
+  display: flex;
+  flex-direction: column;
+ 
 }
