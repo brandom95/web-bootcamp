@@ -1,0 +1,40 @@
+body{
+    background-color: #393E46;
+    
+}
+
+#main{
+    color: rgb(78, 204, 163);
+}
+h1{
+  font-family: "Lobster", cursive;
+  font-weight: 700;
+  font-size: 128px;
+  text-shadow: 5px 0 #232931;
+  display: flex;
+  justify-content: center;
+  margin:30px;
+  
+}
+
+.players{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.player1{
+    margin-right: 10px;
+}
+
+p{
+    
+    text-align: center;
+    font-family: "Indie Flower", cursive;
+    font-size: 32px;
+    margin-top:32px;
+    margin-bottom: 32px;
+}
+
+footer{background-color: aliceblue;}
