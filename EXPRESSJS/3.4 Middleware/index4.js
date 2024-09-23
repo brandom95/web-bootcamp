@@ -16,6 +16,7 @@ const logger = (req, res, next) => {
 
     console.log('requested input', [userInputPet, userInputStreet]
     );
+
     if (!userInputStreet || !userInputPet) {
       return res.status(400).send('Both fields are required !');
     }
