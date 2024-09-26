@@ -1,0 +1,35 @@
+<%- include("partials/header.ejs") %>
+    <%# Post rectangle %>
+        <div class="container">
+            <div>
+                <h1>whats on your mind</h1>
+                <form action="/submit" method="POST">
+                    <textarea name="paragraph_text" cols="50" rows="10"></textarea>
+                    <input type="submit" value="Post">
+
+                </form>
+            </div>
+            <div>
+                <%if (userPost.length> 0 ){ %>
+                    <% userPost.forEach(function(post){ %>
+                        <p>
+                            <%= post.post %>
+                        </p>
+                        <button onclick="toggleUpdateForm(<%=post.id %>)">Update</button>
+                        <form id="update-form-<%= post.id %>" action="/post/<%= post.id %>?_method=PATCH" method="POST"
+                            style="display:none;">
+                            <input type="text" name="post" value="<%= post.post %>">
+                            <input type="submit" value="Submit">
+                        </form>
+                        <button> delete</button>
+                        <% })%>
+                            <% } else{ %>
+                                <h1>Write something and the posts will show here</h1>
+                                <% }%>
+            </div>
+        </div>
+
+
+
+
+        <%- include("partials/footer.ejs") %>
