@@ -15,7 +15,7 @@
                         <p>
                             <%= post.post %>
                         </p>
-                        <button onclick="toggleUpdateForm(<%=post.id %>)">Update</button>
+                        <button onclick="toggleUpdateForm(`<%=post.id %>`)">Update</button>
                         <form id="update-form-<%= post.id %>" action="/post/<%= post.id %>?_method=PATCH" method="POST"
                             style="display:none;">
                             <input type="text" name="post" value="<%= post.post %>">
