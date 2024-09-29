@@ -5,14 +5,13 @@ const app = express();
 const port = 3000;
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
+app.set("view engine", "ejs");
 const loggingMiddleware = (req, res, next) => {
   console.log(`${req.method} - ${req.url}`);
   next();
 };
 
 app.use(loggingMiddleware);
-
 
 //Step 1: Run the solution.js file without looking at the code.
 //Step 2: You can go to the recipe.json file to see the full structure of the recipeJSON below.
@@ -30,17 +29,17 @@ app.get("/", (req, res) => {
 
 app.post("/recipe", (req, res) => {
   switch (req.body.choice) {
-    case chicken:
-      data = JSON.parse(recipeJSON);
+    case "chicken":
+      data = JSON.parse(recipeJSON)[0];
       break;
-    case beef:
-      data = JSON.parse(recipeJSON);
+    case "beef":
+      data = JSON.parse(recipeJSON)[1];
       break;
-    case fish:
-      data = JSON.parse(recipeJSON);
+    case "fish":
+      data = JSON.parse(recipeJSON)[2];
       break;
   }
-
+  res.redirect("/");
 });
 
 app.listen(port, () => {
